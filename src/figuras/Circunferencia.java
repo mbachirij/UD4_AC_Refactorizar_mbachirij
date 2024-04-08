@@ -1,25 +1,25 @@
-package utilidades;
+package figuras;
 
-public class Circulo {
+public class Circunferencia {
 
     /**
      * @return the rad
      */
     public double getRad() {
-        return rad;
+        return radio;
     }
 
     /**
      * @param rad the rad to set
      */
     public void setRad(double rad) {
-        this.rad = rad;
+        this.radio = rad;
     }
 
-    private double rad;
+    private double radio;
 
-    public Circulo(double radio) {
-        this.rad = radio;
+    public Circunferencia(double radio) {
+        this.radio = radio;
     }
 
     public void imprimir() {
@@ -30,7 +30,7 @@ public class Circulo {
         System.out.println(area);
     }
 
-    public boolean esIgual(Circulo otro, boolean conDecimales) {
+    public boolean esIgual(Circunferencia otro, boolean conDecimales) {
         double radio1 = this.getRad();
         double radio2 = otro.getRad();
         if (conDecimales) {
