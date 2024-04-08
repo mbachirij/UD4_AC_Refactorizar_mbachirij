@@ -14,6 +14,7 @@ public class Test {
 
    if (c2.esIgual(c3, true))
        System.out.println("c2 y c3: iguales considerando decimales");
+   
 }
 
 }
