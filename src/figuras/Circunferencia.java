@@ -26,14 +26,16 @@ public class Circunferencia {
         String color = "rojo";
         System.out.println("Di�metro: " + 2 * getRad());
         System.out.println("Color: " + color);
-        double area = 2 * 3.1416 * getRad() * getRad();
+        double area1 = 2 * 3.1416 * getRad() * getRad();
+        double area = area1;
         System.out.println(area);
     }
 
-    public boolean esIgual(Circunferencia otro, boolean conDecimales) {
+
+    public boolean esIgual(Circunferencia otro, boolean considerarDecimales) {
         double radio1 = this.getRad();
         double radio2 = otro.getRad();
-        if (conDecimales) {
+        if (considerarDecimales) {
             if (radio1 == radio2) {
                 return true;
             } else {
